@@ -10,7 +10,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^1.9.2"
+    "astro": "^1.9.2",
+    "daisyui": "^2.51.5"
   },
   "devDependencies": {
     "@astrojs/tailwind": "^1.0.0"
