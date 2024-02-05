@@ -1,6 +1,107 @@
 ---
 import Container from "./Container.astro"
-
+const serviceList = [
+  {
+    name: "Air Conditioner",
+    description: "Cooling appliance for regulating room temperature",
+    URL: "/public/images/Services/s5.webp"
+  },
+  {
+    name: "Fridge",
+    description: "Refrigeration unit for storing perishable items",
+    URL: "/public/images/Services/s6.webp"
+  },
+  {
+    name: "Washing Machine",
+    description: "Device for automating clothes cleaning",
+    URL: "/public/images/Services/Washing.jpeg"
+  },
+  {
+    name: "RO Water Plant",
+    description: "Water Purification System",
+    URL: "/public/images/Services/RO.jpg"
+  },
+  {
+    name: "Geyser ( Electical or Gas )",
+    description: "Water heater for providing hot water",
+    URL: "/public/images/Services/geyser.jpg"
+  },
+  {
+    name: "Light Fitting",
+    description: "Fixture for installing light bulbs",
+    URL: "/public/images/Services/Light.jpeg"
+  },
+  {
+    name: "Celling Fan",
+    description: "Rotating blades for air circulation in rooms",
+    URL: "/public/images/Services/s4.png"
+  },
+  {
+    name: "Stand Fan",
+    description: "Portable fan with adjustable height",
+    URL: "/public/images/Services/standfan.jpg"
+  },
+  {
+    name: "Mixture",
+    description: "Appliance for mixing ingredients in cooking",
+    URL: "/public/images/Services/mixer.webp"
+  },
+  {
+    name: "Laptop",
+    description: "Portable computer for personal use",
+    URL: "/public/images/Services/Laptop.jpeg"
+  },
+  {
+    name: "Computer",
+    description: "Electronic device for processing data",
+    URL: "/public/images/Services/Computer.jpeg"
+  },
+  {
+    name: "Atta Maker",
+    description: "Also known as ghar-ghanti service is provided",
+    URL: "/public/images/Services/ATTA.jpeg"
+  },
+  {
+    name: "Water Motor",
+    description: "Device for pumping water, commonly used in wells.",
+    URL: "/public/images/Services/Motar.jpeg"
+  },
+  {
+    name: "CCTV Installation & Maintenance",
+    description: "Security camera setup and upkeep",
+    URL: "/public/images/Services/CCTV.jpeg"
+  },
+  {
+    name: "Dish TV Service",
+    description: "Satellite television service provider",
+    URL: "/public/images/Services/Dish.jpeg"
+  },
+  {
+    name: "Microwave Oven",
+    description: "Appliance for cooking and reheating",
+    URL: "/public/images/Services/Oven.jpeg"
+  },
+  {
+    name: "Solar Cleaning",
+    description: "Maintenance service for solar panels",
+    URL: "/public/images/Services/Solar.jpeg"
+  },
+  {
+    name: "Cooler",
+    description: "Air cooling device, often used in hot climates",
+    URL: "/public/images/Services/Cooler.jpeg"
+  },
+  {
+    name: "Hand Blender",
+    description: "Handheld device for blending and mixing",
+    URL: "/public/images/Services/blender.jpg"
+  },
+  {
+    name: "Printer",
+    description: "Printer Repair and maintenance service is provided",
+    URL: "/public/images/Services/printer.jpg"
+  },
+] 
 ---
 
 <div id="Services">
@@ -12,113 +113,26 @@ import Container from "./Container.astro"
         </p>
       </div>
       <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        <div class="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10">
-          <div class="relative overflow-hidden rounded-xl">
-            <img src="/images/Services/s1.webp"
-            alt="art cover" loading="lazy" width="1000" height="667" class="h-64 w-full object-cover object-top transition duration-500 group-hover:scale-105"/>
+        {
+          serviceList.map((item)=>(
+            
+          <div class="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10">
+            <div class="relative overflow-hidden rounded-xl">
+              <img src={item.URL} alt="art cover" loading="lazy" width="1000" height="667" class="h-64 w-full object-cover object-top transition duration-500 group-hover:scale-105">
           </div>
           <div class="mt-6 relative">
             <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">
-              Electrical Wiring Installation
+              {item.name}
             </h3>
             <p class="mt-6 mb-8 text-gray-600 dark:text-gray-300">
-              Installing and connecting wiring, outlets, fixtures, switches, and other electrical components.
+              {item.description}
             </p>
-            <!-- <a class="inline-block" href="#">
-              <span class="text-info dark:text-blue-300">Read more</span>
-            </a> -->
           </div> 
         </div>
+          ))
+        }
 
-        <div class="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10">
-          <div class="relative overflow-hidden rounded-xl">
-            <img src="/images/Services/s2.webp"
-            alt="art cover" loading="lazy" width="1000" height="667" class="h-64 w-full object-cover object-top transition duration-500 group-hover:scale-105"/>
-          </div>
-          <div class="mt-6 relative">
-            <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">
-              Electrical Troubleshooting
-            </h3>
-            <p class="mt-6 mb-8 text-gray-600 dark:text-gray-300">
-              Identifying and rectifying issues with existing electrical systems
-            </p>
-            <!-- <a class="inline-block" href="#">
-              <span class="text-info dark:text-blue-300">Read more</span>
-            </a> -->
-          </div>
-          
-        </div>
-        <div class="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10">
-          <div class="relative overflow-hidden rounded-xl">
-            <img src="/images/Services/s3.webp"
-            alt="art cover" loading="lazy" width="1000" height="667" class="h-64 w-full object-cover object-top transition duration-500 group-hover:scale-105"/>
-          </div>
-          <div class="mt-6 relative">
-            <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">
-              Electrical Repair and Maintenance
-            </h3>
-            <p class="mt-6 mb-8 text-gray-600 dark:text-gray-300">
-              Inspecting and maintaining existing electrical systems to ensure they are operating correctly and safely.
-            </p>
-            <!-- <a class="inline-block" href="#">
-              <span class="text-info dark:text-blue-300">Read more</span>
-            </a> -->
-          </div>
-          
-        </div>
-        <div class="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10">
-          <div class="relative overflow-hidden rounded-xl">
-            <img src="/images/Services/s4.png"
-            alt="art cover" loading="lazy" width="1000" height="667" class="h-64 w-full object-cover object-top transition duration-500 group-hover:scale-105"/>
-          </div>
-          <div class="mt-6 relative">
-            <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">
-              Ceiling Fan Repairng
-            </h3>
-            <p class="mt-6 mb-8 text-gray-600 dark:text-gray-300">
-              Installing, connecting and Repairing of all types of Fans 
-            </p>
-            <!-- <a class="inline-block" href="#">
-              <span class="text-info dark:text-blue-300">Read more</span>
-            </a> -->
-          </div>
-          
-        </div>
-        <div class="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10">
-          <div class="relative overflow-hidden rounded-xl">
-            <img src="/images/Services/s5.webp"
-            alt="art cover" loading="lazy" width="1000" height="667" class="h-64 w-full object-cover object-top transition duration-500 group-hover:scale-105"/>
-          </div>
-          <div class="mt-6 relative">
-            <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">
-              Air Conditioner Maintenance
-            </h3>
-            <p class="mt-6 mb-8 text-gray-600 dark:text-gray-300">
-              Identifying and rectifying issues with existing electrical systems
-            </p>
-            <!-- <a class="inline-block" href="#">
-              <span class="text-info dark:text-blue-300">Read more</span>
-            </a> -->
-          </div>
-          
-        </div>
-        <div class="group p-6 sm:p-8 rounded-3xl bg-white border border-gray-100 dark:shadow-none dark:border-gray-700 dark:bg-gray-800 bg-opacity-50 shadow-2xl shadow-gray-600/10">
-          <div class="relative overflow-hidden rounded-xl">
-            <img src="/images/Services/s6.webp"
-            alt="art cover" loading="lazy" width="1000" height="667" class="h-64 w-full object-cover object-top transition duration-500 group-hover:scale-105"/>
-          </div>
-          <div class="mt-6 relative">
-            <h3 class="text-2xl font-semibold text-gray-800 dark:text-white">
-              Fridge Repair and Maintenance
-            </h3>
-            <p class="mt-6 mb-8 text-gray-600 dark:text-gray-300">
-              Inspecting and maintaining existing electrical systems to ensure they are operating correctly and safely.
-            </p>
-            <!-- <a class="inline-block" href="#">
-              <span class="text-info dark:text-blue-300">Read more</span>
-            </a> -->
-          </div>
-          
+        
         </div>
       </div>
       
