@@ -1,5 +1,5 @@
 import { renderers } from './renderers.mjs';
-import { l as levels, g as getEventPrefix, L as Logger, A as AstroIntegrationLogger, manifest } from './manifest_DJhO-rdP.mjs';
+import { l as levels, g as getEventPrefix, L as Logger, A as AstroIntegrationLogger, manifest } from './manifest_CXTLYu5O.mjs';
 import { A as AstroError, R as ResponseSentError, l as MiddlewareNoDataOrNextCalled, n as MiddlewareNotAResponse, o as ROUTE_TYPE_HEADER, p as REROUTE_DIRECTIVE_HEADER, G as GetStaticPathsRequired, q as InvalidGetStaticPathsReturn, t as InvalidGetStaticPathsEntry, u as GetStaticPathsExpectedParams, v as GetStaticPathsInvalidRouteParam, P as PageNumberParamNotFound, D as DEFAULT_404_COMPONENT, N as NoMatchingStaticPathFound, w as PrerenderDynamicEndpointPathCollide, x as ReservedSlotName, y as renderSlotToString, z as renderJSX, B as chunkToString, C as LocalsNotAnObject, H as clientLocalsSymbol, J as clientAddressSymbol$1, K as ClientAddressNotAvailable, S as StaticClientAddressNotAvailable, O as ASTRO_VERSION, Q as responseSentSymbol$1, T as AstroResponseHeadersReassigned, V as renderPage, W as renderEndpoint, X as REROUTABLE_STATUS_CODES } from './chunks/astro_CPOtoHCT.mjs';
 import { serialize, parse } from 'cookie';
 import { e as appendForwardSlash, j as joinPaths, t as trimSlashes, f as fileExtension, s as slash, p as prependForwardSlash, r as removeTrailingForwardSlash, g as collapseDuplicateSlashes } from './chunks/astro/assets-service_D_vfXeBJ.mjs';
@@ -2016,7 +2016,7 @@ const createExports = (manifest, { middlewareSecret }) => {
 };
 
 const _page0 = () => import('./chunks/generic_Dkq_9x0k.mjs');
-const _page1 = () => import('./chunks/index_DnubE5cA.mjs');
+const _page1 = () => import('./chunks/index_BFMkGYl1.mjs');
 const pageMap = new Map([
     ["node_modules/.pnpm/astro@4.5.9/node_modules/astro/dist/assets/endpoint/generic.js", _page0],
     ["src/pages/index.astro", _page1]
@@ -2028,7 +2028,7 @@ const _manifest = Object.assign(manifest, {
     middleware: onRequest
 });
 const _args = {
-    "middlewareSecret": "d21f84d4-eef7-4184-a88b-c20579fff891"
+    "middlewareSecret": "8c563ec9-5dbd-48af-91bb-f8244a67b2f1"
 };
 const _exports = createExports(_manifest, _args);
 const __astrojsSsrVirtualEntry = _exports.default;
