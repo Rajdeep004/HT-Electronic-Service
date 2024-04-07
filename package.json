@@ -11,8 +11,6 @@
   },
   "dependencies": {
     "@astrojs/vercel": "^7.4.0",
-    "@vercel/analytics": "^1.2.2",
-    "@vercel/speed-insights": "^1.0.10",
     "astro": "^4.5.9",
     "tailwindcss": "^3.4.1"
   },

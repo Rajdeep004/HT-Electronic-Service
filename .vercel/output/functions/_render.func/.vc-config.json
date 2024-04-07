@@ -1,6 +1,6 @@
 {
-	"runtime": "nodejs18.x",
-	"handler": "home/rjx/Github/HT-Electronic-Service/.vercel/output/_functions/entry.mjs",
+	"runtime": "nodejs20.x",
+	"handler": "home/rajdeep/Code/HT-Electronic-Service/.vercel/output/_functions/entry.mjs",
 	"launcherType": "Nodejs",
 	"supportsResponseStreaming": true
 }
